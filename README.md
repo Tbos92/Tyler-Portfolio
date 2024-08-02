@@ -1,5 +1,7 @@
 # Tyler-Portfolio
 
+This is the Readme file for my personal professional website. The site includes a home page with a short introduction to myself as a Software Developer and a photo. Additionally, there is an about section that details my personal interests outside of my professional interests. As well, there is a portfolio section detailing various projects that I have worked on to date highlighting my contributions and achievements.
+
 Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere nibh lorem cursus feugiat senectus. Convallis consectetur tempus lorem hendrerit vivamus. Lacinia sagittis pharetra maecenas potenti hendrerit pretium. Egestas magna venenatis magnis cursus torquent. Sodales dis finibus ultrices sodales ante magnis. Feugiat donec curabitur ante odio purus consectetur potenti. Placerat massa habitant rhoncus sapien pharetra mattis neque. Purus quis penatibus tellus varius nostra accumsan. Natoque hendrerit tellus suspendisse habitasse lorem pellentesque dapibus fringilla.
 
 Mus commodo duis aptent felis sem pellentesque vehicula nulla. Varius venenatis proin adipiscing ligula auctor habitant cubilia volutpat. In ac fermentum habitant, posuere etiam rhoncus senectus dictumst? Maecenas etiam phasellus ipsum ligula aliquam donec. Ad amet vestibulum lorem; convallis ultrices commodo. Augue suscipit ac felis laoreet sodales varius tempus. Vestibulum mollis sem tortor dictum semper primis in.
