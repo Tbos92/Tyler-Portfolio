@@ -1,3 +1,16 @@
 body {
     background-color: rgb(121, 84, 155);
 }
+.hiking img {
+    width: 40%;
+}
+img {
+    width: 50%;
+}
+p {
+    text-align: justify;
+}
+h3 {
+    text-decoration: underline;
+    color: rgb(214, 230, 230);
+}
