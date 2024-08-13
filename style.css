@@ -1,16 +1,83 @@
 body {
-    background-color: rgb(121, 84, 155);
+  background-color: #c6c4fc;
 }
-.hiking img {
-    width: 40%;
+#hiking img {
+  width: 40vw;
 }
 img {
-    width: 50%;
+  width: 50vw;
 }
 p {
-    text-align: justify;
+  text-align: justify;
 }
 h3 {
-    text-decoration: underline;
-    color: rgb(214, 230, 230);
+  text-decoration: underline;
+  color: #333;
+  font-size: 4vw;
+}
+p {
+  font-size: 3vw;
+}
+#job {
+  font-size: 4vw;
+}
+h1 {
+  font-size: 6vw;
+}
+footer {
+  font-size: 2vw;
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  justify-content: center;
+  margin-top: 4vh;
+}
+input {
+    width: 20vw;
+}
+textarea {
+    width: 20vw;
+    height: 20vh;
+}
+button {
+    width: 20vw;
+}
+/* for sticky navbar, first style navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+/* navbar links styling */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 4vw;
+}
+/* add hover effect to links to underline when hovered over */
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* add active navbar page color distinction */
+#navbar .active {
+  background-color: #713ba0;
+  color: white;
+}
+/* page content */
+.content {
+  padding: 16px;
+}
+/* the sticky class is added to the navbar with JS when it reaches its scrol position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* add padding to top of page content to prevent sudden/quick movements causing issues with the bar as it gets to its new position at the top of the page */
+.sticky + .content {
+  padding-top: 60px;
 }
