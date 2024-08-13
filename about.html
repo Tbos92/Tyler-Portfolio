@@ -3,19 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Site: About</title>
+    <title>Tyler Bos: About</title>
     <link rel="stylesheet" href="style.css" />
     <script src="javascript.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      $(function () {
+        $("a").each(function () {
+          if ($(this).prop("href") == window.location.href) {
+            $(this).addClass("active");
+            $(this).parents("li").addClass("active");
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- Add persistent nav bar that includes links to Home, About,
      and Portfolio pages at top of page -->
     <section>
       <div>
-        <nav>
+        <nav id="navbar">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
       <div>
@@ -24,7 +36,7 @@
     </section>
     <!-- Add sections that explains what you like to do when not
      working, include photos -->
-    <section>
+    <section class="content">
       <div class="Bouldering">
         <h3>Bouldering</h3>
         <p>
@@ -45,7 +57,7 @@
           placeat. Modi, tempore et.
         </p>
         <span>
-          <img class="bouldering" src="Bouldering.jpg" alt="bouldering" />
+          <img id="bouldering" src="Bouldering.jpg" alt="bouldering" />
         </span>
       </div>
       <div class="Boardgames">
@@ -69,7 +81,7 @@
         </p>
         <span>
           <img
-            class="root"
+            id="root"
             src="https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__imagepagezoom/img/CUcl3RwBFUE4-g835Ly7d6XmBNs=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic4254509.jpg"
             alt="Root"
           />
@@ -95,17 +107,44 @@
           placeat. Modi, tempore et.
         </p>
         <span>
-          <img class="minis" src="Minis.jpg" alt="minis" />
+          <img id="minis" src="Minis.jpg" alt="minis" />
         </span>
       </div>
     </section>
     <!-- Include links to LinkedIn and GitHub at footer of page
      should be persistent just like the header nav bar -->
     <footer>
-      <div class="External Links">
-        <a href="https://github.com/Tbos92">GitHub</a>
-        <a href="https://www.linkedin.com/in/tyler-bos-62292b107/">Linkedin</a>
+      <div>
+        <a target="_blank" href="https://github.com/Tbos92"
+          ><img
+            style="width: 15vw"
+            src="github-mark.png"
+            alt="GitHub icon"
+        /></a>
+      </div>
+      <div>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/tyler-bos-62292b107/"
+          ><img style="width: 15vw" src="linkedin.png" alt="LinkedIn icon"
+        /></a>
       </div>
     </footer>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.scrollY >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
